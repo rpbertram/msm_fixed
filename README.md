@@ -1,24 +1,12 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run the following:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - `bundle install --without production`
+ - `rake db:migrate`
+ - `rake db:seed:directors`
+ - `rake db:seed:movies`
+ - `rake db:seed:actors`
+ - `rake db:seed:characters`
+ - `rails s`
+ - Pull up the [Devise Cheatsheet](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5).
