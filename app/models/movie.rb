@@ -1,6 +1,8 @@
 class Movie < ApplicationRecord
   # Direct associations
 
+  has_many :bookmarks
+  
   has_many   :characters
 
   belongs_to :director

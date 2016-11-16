@@ -1,3 +1,9 @@
+<% if current_user != nil %>
+<h1>
+  Welcome back, <%= current_user.email %>
+</h1>
+<% end %>
+
 <div class="page-header">
   <h1>
     Movies
